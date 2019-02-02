@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Mixer</title>
+
+  <style>
+
+html{
+
+    font-family: arial; 
+    background-color:lightsteelblue;
+
+}
+
+  
+  </style>
+
+  <script>
+
+var player = document.createElement('audio');
+var player2 = document.createElement('audio');
+var player3 = document.createElement('audio');
+var player4 = document.createElement('audio');
+var player5 = document.createElement('audio');
+var player6 = document.createElement('audio');
+var player7 = document.createElement('audio');
+var player8 = document.createElement('audio');
+
+
+   player.setAttribute('src', 'https://archive.org/download/GenerativeLoopsCompositionsProject/TParkSound%201.mp3');
+   player.setAttribute('loop', true);
+   player2.setAttribute('src', 'https://archive.org/download/GenerativeLoopsCompositionsProject/TParkSound%202.mp3');
+   player2.setAttribute('loop', true);
+   player3.setAttribute('src', 'https://archive.org/download/GenerativeLoopsCompositionsProject/TParkSound%203.mp3');
+   player3.setAttribute('loop', true);
+   player4.setAttribute('src', 'https://archive.org/download/GenerativeLoopsCompositionsProject/TParkSound%204.mp3');
+   player4.setAttribute('loop', true);
+   player5.setAttribute('src', 'https://archive.org/download/GenerativeLoopsCompositionsProject/TParkSound%205.mp3');
+   player5.setAttribute('loop', true);
+   player6.setAttribute('src', 'https://archive.org/download/GenerativeLoopsCompositionsProject/TParkSound%206.mp3');
+   player6.setAttribute('loop', true);
+   player7.setAttribute('src', 'https://archive.org/download/GenerativeLoopsCompositionsProject/TParkSound%207.mp3');
+   player7.setAttribute('loop', true);
+   player8.setAttribute('src', 'https://archive.org/download/GenerativeLoopsCompositionsProject/TParkSound%208.mp3');
+   player8.setAttribute('loop', true);
+   
+              function stopgo(btn) {
+      if (btn.value == "Pause") {
+        player.pause()
+        btn.value = "Play"
+      } else {
+        player.play()
+        btn.value = "Pause"
+      }
+    }
+
+    function stopgo2(btn) {
+      if (btn.value == "Pause") {
+        player2.pause()
+        btn.value = "Play"
+      } else {
+        player2.play()
+        btn.value = "Pause"
+      }
+    }
+    function stopgo3(btn) {
+      if (btn.value == "Pause") {
+        player3.pause()
+        btn.value = "Play"
+      } else {
+        player3.play()
+        btn.value = "Pause"
+      }
+    }
+
+    function stopgo4(btn) {
+      if (btn.value == "Pause") {
+        player4.pause()
+        btn.value = "Play"
+      } else {
+        player4.play()
+        btn.value = "Pause"
+      }
+    }
+    function stopgo5(btn) {
+      if (btn.value == "Pause") {
+        player5.pause()
+        btn.value = "Play"
+      } else {
+        player5.play()
+        btn.value = "Pause"
+      }
+    }
+    function stopgo6(btn) {
+      if (btn.value == "Pause") {
+        player6.pause()
+        btn.value = "Play"
+      } else {
+        player6.play()
+        btn.value = "Pause"
+      }
+    }
+    function stopgo7(btn) {
+      if (btn.value == "Pause") {
+        player7.pause()
+        btn.value = "Play"
+      } else {
+        player7.play()
+        btn.value = "Pause"
+      }
+    }
+    function stopgo8(btn) {
+      if (btn.value == "Pause") {
+        player8.pause()
+        btn.value = "Play"
+      } else {
+        player8.play()
+        btn.value = "Pause"
+      }
+    }
+
+    function volume(amt) {
+      player.volume = amt
+    }
+
+    function volume2(amt) {
+      player2.volume = amt
+    }
+
+    function volume3(amt) {
+      player3.volume = amt
+    }
+
+    function volume4(amt) {
+      player4.volume = amt
+    }
+    function volume5(amt) {
+      player5.volume = amt
+    }
+    function volume6(amt) {
+      player6.volume = amt
+    }
+    function volume7(amt) {
+      player7.volume = amt
+    }
+    function volume8(amt) {
+      player8.volume = amt
+    }
+
+function playsound() {
+
+        player.play();
+        player2.play();
+        player3.play();
+        player4.play();
+        player5.play();
+        player6.play();
+        player7.play();
+        player8.play();
+
+         }
+
+    </script>  
+</head>
+<body>
+
+    <div align = center>
+
+        <h1>JavaScript Sound Mixer</h1>
+        <h4><em>By Thomas Park, 2019</em></h4>
+
+<br>
+
+        <h3>Mixing Tips:</h3>
+        
+Press Play controls if media doesn't autostart.<br>
+All media loops forever.<br>
+Change the mix over time.<br>
+Use mutes to isolate sounds.<br>
+Play tracks at different times.<br>
+
+
+<br><br>
+
+        <p id="soundcontrols">Sound 1: &nbsp; 
+                <!-- Show a Pause button -->
+                <input type="button" id="playpause" value="Pause" style="width: 60px" onclick="stopgo(this)">
+                <!-- Show an HTML5 range control for volume -->
+                <input type="range" min="0" max="100" onchange="volume(this.value/100)" title="Volume">
+              </p>
+
+              <p id="soundcontrols">Sound 2: &nbsp; 
+                    <!-- Show a Pause button -->
+                    <input type="button" id="playpause" value="Pause" style="width: 60px" onclick="stopgo2(this)">
+                    <!-- Show an HTML5 range control for volume -->
+                    <input type="range" min="0" max="100" onchange="volume2(this.value/100)" title="Volume">
+                  </p>
+
+                  <p id="soundcontrols">Sound 3: &nbsp; 
+                        <!-- Show a Pause button -->
+                        <input type="button" id="playpause" value="Pause" style="width: 60px" onclick="stopgo3(this)">
+                        <!-- Show an HTML5 range control for volume -->
+                        <input type="range" min="0" max="100" onchange="volume3(this.value/100)" title="Volume">
+                      </p>
+
+                      
+                  <p id="soundcontrols">Sound 4: &nbsp; 
+                        <!-- Show a Pause button -->
+                        <input type="button" id="playpause" value="Pause" style="width: 60px" onclick="stopgo4(this)">
+                        <!-- Show an HTML5 range control for volume -->
+                        <input type="range" min="0" max="100" onchange="volume4(this.value/100)" title="Volume">
+                      </p>
+                      
+                  <p id="soundcontrols">Sound 5: &nbsp; 
+                        <!-- Show a Pause button -->
+                        <input type="button" id="playpause" value="Pause" style="width: 60px" onclick="stopgo5(this)">
+                        <!-- Show an HTML5 range control for volume -->
+                        <input type="range" min="0" max="100" onchange="volume5(this.value/100)" title="Volume">
+                      </p>
+                      
+                  <p id="soundcontrols">Sound 6: &nbsp; 
+                        <!-- Show a Pause button -->
+                        <input type="button" id="playpause" value="Pause" style="width: 60px" onclick="stopgo6(this)">
+                        <!-- Show an HTML5 range control for volume -->
+                        <input type="range" min="0" max="100" onchange="volume6(this.value/100)" title="Volume">
+                      </p>
+                      
+                  <p id="soundcontrols">Sound 7: &nbsp; 
+                        <!-- Show a Pause button -->
+                        <input type="button" id="playpause" value="Pause" style="width: 60px" onclick="stopgo7(this)">
+                        <!-- Show an HTML5 range control for volume -->
+                        <input type="range" min="0" max="100" onchange="volume7(this.value/100)" title="Volume">
+                      </p>
+                      
+                  <p id="soundcontrols">Sound 8: &nbsp; 
+                        <!-- Show a Pause button -->
+                        <input type="button" id="playpause" value="Pause" style="width: 60px" onclick="stopgo8(this)">
+                        <!-- Show an HTML5 range control for volume -->
+                        <input type="range" min="0" max="100" onchange="volume8(this.value/100)" title="Volume">
+                      </p>
+
+                      <br><br>
+
+        <button onclick="playsound()">Start Sound Play</button>
+
+    </div>
+
+</body>
+
+<footer>
+<br><br>
+    <div align = center>
+
+        Public Domain 1.0
+
+    </div>
+
+</footer>
+</html>
